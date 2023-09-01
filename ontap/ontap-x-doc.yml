@@ -3505,14 +3505,14 @@ paths:
         title: List key servers configured in an external key manager
         category: security
         filename: get-security-key-managers-key-servers.html
-        subcategory: Manage security key managers
+        subcategory: 
         explorer: false
     post:
       x-doc:
         title: Add primary key servers to an external key manager
         category: security
         filename: post-security-key-managers-key-servers.html
-        subcategory: Manage key manager servers
+        subcategory: 
         explorer: false
   "/security/key-managers/{uuid}/key-servers/{server}":
     delete:
@@ -3520,21 +3520,21 @@ paths:
         title: Delete a primary key server
         category: security
         filename: delete-security-key-managers-key-servers-.html
-        subcategory: Manage key manager servers
+        subcategory: 
         explorer: false
     get:
       x-doc:
         title: Retrieve key servers configured in an external key manager
         category: security
         filename: get-security-key-managers-key-servers-.html
-        subcategory: Manage key manager servers
+        subcategory: 
         explorer: false
     patch:
       x-doc:
         title: Update a primary key server
         category: security
         filename: patch-security-key-managers-key-servers-.html
-        subcategory: Manage key manager servers
+        subcategory: 
         explorer: false
  
   "/security/login/messages":
@@ -3543,6 +3543,7 @@ paths:
         title: Retrieve login banner and messages of the day
         category: security
         filename: get-security-login-messages.html
+        subcategory: View and update login message configuration
         explorer: false
   "/security/login/messages/{uuid}":
     get:
@@ -3851,7 +3852,7 @@ paths:
         title: Report cluster-wide storage details across different tiers
         category: storage
         filename: get-storage-cluster.html
-        subcategory: Manage bridges
+        subcategory: 
         explorer: false
   "/storage/disks":
     get:
@@ -4026,7 +4027,7 @@ paths:
         title: Retrieve historical performance metrics for a LUN
         category: SAN
         filename: get-storage-luns-metrics.html
-        subcategory: Manage LUN attributes
+        subcategory: Manage LUNs 
         explorer: false
   "/storage/namespaces":
     get:
@@ -4554,7 +4555,7 @@ paths:
         title: Create a volume efficiency policy
         category: storage
         filename: post-storage-volume-efficiency-policies.html
-        subcategory: Manage volume efficiency policies
+        subcategory: 
         explorer: false
   "/storage/volume-efficiency-policies/{uuid}":
     delete:
@@ -4562,7 +4563,7 @@ paths:
         title: Delete a volume efficiency policy
         category: storage
         filename: delete-storage-volume-efficiency-policies-.html
-        subcategory: Manage volume efficiency policies
+        subcategory: 
         explorer: false
     
   "/storage/volumes":
