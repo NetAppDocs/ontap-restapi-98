@@ -198,7 +198,7 @@ paths:
         title: Retrieve application templates
         category: application
         filename: get-application-templates.html
-        subcategory: View application templates
+        subcategory: 
         explorer: false
   "/application/templates/{name}":
     get:
@@ -206,7 +206,7 @@ paths:
         title: Retrieve an application template
         category: application
         filename: get-application-templates-.html
-        subcategory: View application templates
+        subcategory: 
         explorer: false
   "/cloud/targets":
     get:
@@ -1549,7 +1549,7 @@ paths:
   "/network/fc/interfaces":
     get:
       x-doc:
-        title: Retrieves FC interfaces
+        title: Retrieve FC interfaces
         category: networking
         filename: get-network-fc-interfaces.html
         subcategory: Manage FC network interfaces
@@ -2360,7 +2360,7 @@ paths:
   "/protocols/cifs/netbios":
     get:
       x-doc:
-        title: Retrieve NetBios information
+        title: Retrieve NetBIOS information
         category: NAS
         filename: get-protocols-cifs-netbios.html
         subcategory: View NetBIOS information
@@ -2617,7 +2617,7 @@ paths:
   "/protocols/file-access-tracing/events":
     get:
       x-doc:
-        title: Retrieve xxxxx
+        title: Retrieve trace results for denied or allowed events
         category: NAS
         filename: get-protocols-file-access-tracing-events.html
         subcategory: 
@@ -2626,14 +2626,14 @@ paths:
   "/protocols/file-access-tracing/events/{node.uuid}/{svm.uuid}/{index}":
     get:
       x-doc:
-        title: Retrieve xxxxx
+        title: Retrieve trace results
         category: NAS
         filename: get-protocols-file-access-tracing-events-node-.html
         subcategory: 
         explorer: false
     delete:
       x-doc:
-        title: Retrieve xxxxx
+        title: Delete trace results
         category: NAS
         filename: delete-protocols-file-access-tracing-events-node-.html
         subcategory: 
@@ -2641,14 +2641,14 @@ paths:
   "/protocols/file-access-tracing/filters":
     get:
       x-doc:
-        title: Retrieve xxxxx
+        title: Retrieve security trace filter entry information
         category: NAS
         filename: get-protocols-file-access-tracing-filters.html
         subcategory: 
         explorer: false
     post:
       x-doc:
-        title: Retrieve xxxxx
+        title: Create security trace filter entries
         category: NAS
         filename: delete-protocols-file-access-tracing-filters.html
         subcategory: 
@@ -2657,21 +2657,21 @@ paths:
   "/protocols/file-access-tracing/filters/{svm.uuid}/{index}":
     get:
       x-doc:
-        title: Retrieve xxxxx
+        title: Retrieve security trace filter entry information
         category: NAS
         filename: get-protocols-file-access-tracing-filters-svm-.html
         subcategory: 
         explorer: false
     patch:
       x-doc:
-        title: Retrieve xxxxx
+        title: Update security trace filter entries
         category: NAS
         filename: delete-protocols-file-access-tracing-filters-svm-.html
         subcategory: 
         explorer: false 
     delete:
       x-doc:
-        title: Retrieve xxxxx
+        title: Delete security trace filters
         category: NAS
         filename: delete-protocols-file-access-tracing-filters-svm-.html
         subcategory: 
@@ -3261,7 +3261,7 @@ paths:
   "/protocols/nfs/services":
     get:
       x-doc:
-        title: Retrieves NFS configuration for SVMs
+        title: Retrieve NFS configuration for SVMs
         category: NAS
         filename: get-protocols-nfs-services.html
         subcategory: Manage NFS services
@@ -3766,14 +3766,14 @@ paths:
         title: Retrieve initiator groups
         category: SAN
         filename: get-protocols-san-igroups.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     post:
       x-doc:
         title: Create an initiator group
         category: SAN
         filename: post-protocols-san-igroups.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{igroup.uuid}/igroups":
     get:
@@ -3781,14 +3781,14 @@ paths:
         title: Retrieve nested initiator groups of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-igroups.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     post:
       x-doc:
         title: Add nested initiator groups to an initiator group
         category: SAN
         filename: post-protocols-san-igroups-igroups.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{igroup.uuid}/igroups/{uuid}":
     delete:
@@ -3796,14 +3796,14 @@ paths:
         title: Remove a nested initiator group from an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     get:
       x-doc:
         title: Retrieve a nested initiator group of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{igroup.uuid}/initiators":
     get:
@@ -3811,14 +3811,14 @@ paths:
         title: Retrieve initiators of an initiator group
         category: SAN
         filename: get-protocols-san-igroups-initiators.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     post:
       x-doc:
         title: Add initiators to an initiator group
         category: SAN
         filename: post-protocols-san-igroups-initiators.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{igroup.uuid}/initiators/{name}":
     delete:
@@ -3826,21 +3826,21 @@ paths:
         title: Delete an initiator from an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-initiators-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     get:
       x-doc:
         title: Retrieve an initiator 
         category: SAN
         filename: get-protocols-san-igroups-initiators-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     patch:
       x-doc:
         title: Update an initiator 
         category: SAN
         filename: patch-protocols-san-igroups-initiators-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/igroups/{uuid}":
     delete:
@@ -3848,21 +3848,21 @@ paths:
         title: Delete an initiator group
         category: SAN
         filename: delete-protocols-san-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     get:
       x-doc:
         title: Retrieve an initiator group
         category: SAN
         filename: get-protocols-san-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
     patch:
       x-doc:
         title: Update an initiator group
         category: SAN
         filename: patch-protocols-san-igroups-.html
-        subcategory: Manage SAN iGroups
+        subcategory: Manage SAN igroups
         explorer: false
   "/protocols/san/iscsi/credentials":
     get:
@@ -4029,14 +4029,14 @@ paths:
         title: Retrieve portsets
         category: SAN
         filename: get-protocols-san-portsets.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
     post:
       x-doc:
         title: Create a portset
         category: SAN
         filename: post-protocols-san-portsets.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/portsets/{portset.uuid}/interfaces":
     get:
@@ -4044,14 +4044,14 @@ paths:
         title: Retrieve portset network interfaces
         category: SAN
         filename: get-protocols-san-portsets-interfaces.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
     post:
       x-doc:
         title: Add portset network interfaces
         category: SAN
         filename: post-protocols-san-portsets-interfaces.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/portsets/{portset.uuid}/interfaces/{uuid}":
     delete:
@@ -4059,14 +4059,14 @@ paths:
         title: Delete portset network interfaces
         category: SAN
         filename: delete-protocols-san-portsets-interfaces-.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
     get:
       x-doc:
         title: Retrieve specific portset network interfaces
         category: SAN
         filename: get-protocols-san-portsets-interfaces-.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/portsets/{uuid}":
     delete:
@@ -4074,14 +4074,14 @@ paths:
         title: Delete a portset
         category: SAN
         filename: delete-protocols-san-portsets-.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
     get:
       x-doc:
         title: Retrieve a portset
         category: SAN
         filename: get-protocols-san-portsets-.html
-        subcategory: Manage SAN postSets
+        subcategory: Manage SAN portsets
         explorer: false
   "/protocols/san/vvol-bindings":
     get:
@@ -4655,7 +4655,7 @@ paths:
   "/security/azure-key-vaults/{azure_key_vault.uuid}/restore":
     post:
       x-doc:
-        title: Re xxxxxxx
+        title: Restore keys for an SVM
         category: security
         filename: post-security-azure-key-vaults-rekey-external.html
         subcategory: Manage Azure Key Vaults 
@@ -5652,7 +5652,7 @@ paths:
   "/storage/file/move":
     post:
       x-doc:
-        title: Cretae zxxxxx
+        title: Start a file move operation
         category: storage
         filename: post-storage-file-move.html
         subcategory:
@@ -5729,22 +5729,22 @@ paths:
   "/storage/monitored-files":
     get:
       x-doc:
-        title: Retrieve xxx
+        title: Retrieve all monitored file
         category: storage
         filename: get-storage-monitored-files.html
         subcategory: View and create monitored files
         explorer: false
     post:
       x-doc:
-        title: Create xxx
+        title: Create a monitored file
         category: storage
         filename: post-storage-monitored-files.html
         subcategory: View and create monitored files
         explorer: false 
-  "/storage/monitored-files/{uuid}/":
+  "/storage/monitored-files/{uuid}":
     delete:
       x-doc:
-        title: Delete xxx
+        title: Delete a specific file
         category: storage
         filename: delete-storage-monitored-files.html
         subcategory: View and create monitored files
@@ -5752,7 +5752,7 @@ paths:
   "/storage/monitored-files/{monitored_file.uuid}/top-metrics/files":
     get:
       x-doc:
-        title: Retrieve xxx
+        title: Retrieve historical performance of a file
         category: storage
         filename: get-storage-monitored-files.html
         subcategory: View and create monitored files
