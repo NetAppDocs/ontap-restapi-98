@@ -2614,6 +2614,69 @@ paths:
         filename: patch-protocols-cifs-unix-symlink-mapping-.html
         subcategory: Manage CIFS UNIX symlink mapping
         explorer: false
+  "/protocols/file-access-tracing/events":
+    get:
+      x-doc:
+        title: Retrieve xxxxx
+        category: NAS
+        filename: get-protocols-file-access-tracing-events.html
+        subcategory: 
+        explorer: false
+
+  "/protocols/file-access-tracing/events/{node.uuid}/{svm.uuid}/{index}":
+    get:
+      x-doc:
+        title: Retrieve xxxxx
+        category: NAS
+        filename: get-protocols-file-access-tracing-events-node-.html
+        subcategory: 
+        explorer: false
+    delete:
+      x-doc:
+        title: Retrieve xxxxx
+        category: NAS
+        filename: delete-protocols-file-access-tracing-events-node-.html
+        subcategory: 
+        explorer: false 
+  "/protocols/file-access-tracing/filters":
+    get:
+      x-doc:
+        title: Retrieve xxxxx
+        category: NAS
+        filename: get-protocols-file-access-tracing-filters.html
+        subcategory: 
+        explorer: false
+    post:
+      x-doc:
+        title: Retrieve xxxxx
+        category: NAS
+        filename: delete-protocols-file-access-tracing-filters.html
+        subcategory: 
+        explorer: false   
+
+  "/protocols/file-access-tracing/filters/{svm.uuid}/{index}":
+    get:
+      x-doc:
+        title: Retrieve xxxxx
+        category: NAS
+        filename: get-protocols-file-access-tracing-filters-svm-.html
+        subcategory: 
+        explorer: false
+    patch:
+      x-doc:
+        title: Retrieve xxxxx
+        category: NAS
+        filename: delete-protocols-file-access-tracing-filters-svm-.html
+        subcategory: 
+        explorer: false 
+    delete:
+      x-doc:
+        title: Retrieve xxxxx
+        category: NAS
+        filename: delete-protocols-file-access-tracing-filters-svm-.html
+        subcategory: 
+        explorer: false   
+
   "/protocols/cifs/users-and-groups/bulk-import/{svm.uuid}":
     get:
       x-doc:
@@ -4589,6 +4652,14 @@ paths:
         filename: post-security-azure-key-vaults-rekey-external.html
         subcategory: Manage Azure Key Vaults 
         explorer: false
+  "/security/azure-key-vaults/{azure_key_vault.uuid}/restore":
+    post:
+      x-doc:
+        title: Re xxxxxxx
+        category: security
+        filename: post-security-azure-key-vaults-rekey-external.html
+        subcategory: Manage Azure Key Vaults 
+        explorer: false
   "/security/azure-key-vaults/{uuid}":
     delete:
       x-doc:
@@ -5578,20 +5649,13 @@ paths:
         filename: post-storage-file-copy.html
         subcategory: Manage storage file clones
         explorer: false
-  "/storage/file/moves":
-    get:
-      x-doc:
-        title: Retrieve all ongoing file move operations in the cluster
-        category: storage
-        filename: get-storage-file-moves.html
-        subcategory: Manage storage file moves
-        explorer: false
+  "/storage/file/move":
     post:
       x-doc:
-        title: Start a file move operation
+        title: Cretae zxxxxx
         category: storage
-        filename: post-storage-file-moves.html
-        subcategory: Manage storage file moves
+        filename: post-storage-file-move.html
+        subcategory:
         explorer: false
   "/storage/file/moves/{node.uuid}/{uuid}/{index}":
     get:
@@ -5661,6 +5725,39 @@ paths:
         filename: patch-storage-flexcache-origins-.html
         subcategory: Manage storage FlexCache origin volumes
         explorer: false
+
+  "/storage/monitored-files":
+    get:
+      x-doc:
+        title: Retrieve xxx
+        category: storage
+        filename: get-storage-monitored-files.html
+        subcategory: View and create monitored files
+        explorer: false
+    post:
+      x-doc:
+        title: Create xxx
+        category: storage
+        filename: post-storage-monitored-files.html
+        subcategory: View and create monitored files
+        explorer: false 
+  "/storage/monitored-files/{uuid}/":
+    delete:
+      x-doc:
+        title: Delete xxx
+        category: storage
+        filename: delete-storage-monitored-files.html
+        subcategory: View and create monitored files
+        explorer: false 
+  "/storage/monitored-files/{monitored_file.uuid}/top-metrics/files":
+    get:
+      x-doc:
+        title: Retrieve xxx
+        category: storage
+        filename: get-storage-monitored-files.html
+        subcategory: View and create monitored files
+        explorer: false
+ 
   "/storage/luns":
     get:
       x-doc:
