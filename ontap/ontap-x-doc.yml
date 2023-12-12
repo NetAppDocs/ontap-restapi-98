@@ -3235,7 +3235,7 @@ paths:
         explorer: false
     patch:
       x-doc:
-        title: Update an SAML service provider configuration
+        title: Update a SAML service provider configuration
         category: security
         filename: patch-security-authentication-cluster-saml-sp.html
         subcategory: Manage SAML service
