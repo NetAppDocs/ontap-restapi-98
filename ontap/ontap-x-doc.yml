@@ -3221,7 +3221,7 @@ paths:
   "/security/authentication/cluster/saml-sp":
     delete:
       x-doc:
-        title: Delete an SAML service provider configuration
+        title: Delete a SAML service provider configuration
         category: security
         filename: delete-security-authentication-cluster-saml-sp.html
         subcategory: Manage SAML service
