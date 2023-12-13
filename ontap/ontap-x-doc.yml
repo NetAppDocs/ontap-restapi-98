@@ -2975,7 +2975,7 @@ paths:
         explorer: false
     patch:
       x-doc:
-        title: Update Vscan On-Demand policy configuration for an SVM
+        title: Update the Vscan On-Demand policy configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-demand-policies-.html
         subcategory: Manage Vscan On-Demand policies
@@ -3221,28 +3221,28 @@ paths:
   "/security/authentication/cluster/saml-sp":
     delete:
       x-doc:
-        title: Delete an SAML service provider configuration
+        title: Delete a SAML service provider configuration
         category: security
         filename: delete-security-authentication-cluster-saml-sp.html
         subcategory: Manage SAML service
         explorer: false
     get:
       x-doc:
-        title: Retrieve an SAML service provider configuration
+        title: Retrieve a SAML service provider configuration
         category: security
         filename: get-security-authentication-cluster-saml-sp.html
         subcategory: Manage SAML service
         explorer: false
     patch:
       x-doc:
-        title: Update an SAML service provider configuration
+        title: Update a SAML service provider configuration
         category: security
         filename: patch-security-authentication-cluster-saml-sp.html
         subcategory: Manage SAML service
         explorer: false
     post:
       x-doc:
-        title: Create an SAML service provider configuration
+        title: Create a SAML service provider configuration
         category: security
         filename: post-security-authentication-cluster-saml-sp.html
         subcategory: Manage SAML service
@@ -3635,7 +3635,7 @@ paths:
   "/security/ssh":
     get:
       x-doc:
-        title: Retrieve cluster SSH server ciphers, mac algorithms, key exchange algorithms, and connection limits
+        title: Retrieve cluster SSH server ciphers, MAC algorithms, key exchange algorithms, and connection limits
         category: security
         filename: get-security-ssh.html
         subcategory: Manage SSH server
@@ -4242,7 +4242,7 @@ paths:
   "/storage/snaplock/audit-logs":
     get:
       x-doc:
-        title: Retrieve an SVM configured with audit log volumes
+        title: Retrieve SVMs configured with audit log volumes
         category: snaplock
         filename: get-storage-snaplock-audit-logs.html
         subcategory: Manage SnapLock audit logs
@@ -4480,14 +4480,14 @@ paths:
         title: Retrieve Snapshot copy policies
         category: storage
         filename: get-storage-snapshot-policies.html
-        subcategory: Create and retrieve Snapshot copy policies
+        subcategory: Manage Snapshot copy policies
         explorer: false
     post:
       x-doc:
         title: Create a Snapshot copy policy
         category: storage
         filename: post-storage-snapshot-policies.html
-        subcategory: Create and retrieve Snapshot copy policies
+        subcategory: Manage Snapshot copy policies
         explorer: false
   "/storage/snapshot-policies/{snapshot_policy.uuid}/schedules":
     get:
@@ -4532,21 +4532,21 @@ paths:
         title: Delete a Snapshot copy policy
         category: storage
         filename: delete-storage-snapshot-policies-.html
-        subcategory: Manage Snapshot copy policies and schedules
+        subcategory: Manage Snapshot copy policies 
         explorer: false
     get:
       x-doc:
         title: Retrieve Snapshot copy policy details
         category: storage
         filename: get-storage-snapshot-policies-.html
-        subcategory: Manage Snapshot copy policies and schedules
+        subcategory: Manage Snapshot copy policies 
         explorer: false
     patch:
       x-doc:
         title: Update a Snapshot copy policy
         category: storage
         filename: patch-storage-snapshot-policies-.html
-        subcategory: Manage Snapshot copy policies and schedules
+        subcategory: Manage Snapshot copy policies 
         explorer: false
 
   "/storage/volume-efficiency-policies":
