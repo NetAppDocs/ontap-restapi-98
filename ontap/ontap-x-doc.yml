@@ -178,14 +178,14 @@ paths:
   "/cluster":
     get:
       x-doc:
-        title: Retrieve cluster configuration
+        title: Retrieve a cluster configuration
         category: cluster
         filename: get-cluster.html
         subcategory: Manage clusters
         explorer: false
     patch:
       x-doc:
-        title: Update cluster configuration 
+        title: Update a cluster configuration 
         category: cluster
         filename: patch-cluster.html
         subcategory: Manage clusters
@@ -271,7 +271,7 @@ paths:
         explorer: false
     patch:
       x-doc:
-        title: Update license manager configuration
+        title: Update the license manager configuration
         category: cluster
         filename: patch-cluster-licensing-license-managers-.html
         subcategory: Manage cluster license managers
@@ -440,7 +440,7 @@ paths:
   "/cluster/metrocluster/nodes/{node.uuid}":
     get:
       x-doc:
-        title: Retrieve node configuration in MetroCluster
+        title: Retrieve a node configuration in MetroCluster
         category: cluster
         filename: get-cluster-metrocluster-nodes-.html
         subcategory: Retrieve MetroCluster node configurations
@@ -532,7 +532,7 @@ paths:
         explorer: false
     get:
       x-doc:
-        title: Retrieve NTP symmetric authentication key details
+        title: Retrieve the NTP symmetric authentication key details
         category: cluster
         filename: get-cluster-ntp-keys-.html
         subcategory: Manage cluster NTP keys
@@ -675,7 +675,7 @@ paths:
   "/cluster/software/download":
     get:
       x-doc:
-        title: Retrieve software or firmware download status
+        title: Retrieve the software or firmware download status
         category: cluster
         filename: get-cluster-software-download.html
         subcategory: Manage cluster software
@@ -690,7 +690,7 @@ paths:
   "/cluster/software/history":
     get:
       x-doc:
-        title: Retrieve software installation requests history details 
+        title: Retrieve the software installation request history details 
         category: cluster
         filename: get-cluster-software-history.html
         subcategory: Manage cluster software
@@ -713,7 +713,7 @@ paths:
         explorer: false
     get:
       x-doc:
-        title: Retrieve software package information
+        title: Retrieve the software package information
         category: cluster
         filename: get-cluster-software-packages-.html
         subcategory: Manage cluster software
@@ -745,7 +745,7 @@ paths:
   "/name-services/dns/{svm.uuid}":
     delete:
       x-doc:
-        title: Delete DNS domain configuration  
+        title: Delete a DNS domain configuration  
         category: name-services
         filename: delete-name-services-dns-.html
         subcategory: Manage DNS configurations
@@ -784,21 +784,21 @@ paths:
   "/name-services/ldap/{svm.uuid}":
     delete:
       x-doc:
-        title: Delete LDAP configuration for an SVM
+        title: Delete the LDAP configuration for an SVM
         category: name-services
         filename: delete-name-services-ldap-.html
         subcategory: Manage LDAP server configurations
         explorer: false
     get:
       x-doc:
-        title: Retrieve LDAP configuration for an SVM
+        title: Retrieve the LDAP configuration for an SVM
         category: name-services
         filename: get-name-services-ldap-.html
         subcategory: Manage LDAP server configurations
         explorer: false
     patch:
       x-doc:
-        title: Update LDAP configuration for an SVM
+        title: Update the LDAP configuration for an SVM
         category: name-services
         filename: patch-name-services-ldap-.html
         subcategory: Manage LDAP server configurations
@@ -807,7 +807,7 @@ paths:
   "/name-services/name-mappings":
     get:
       x-doc:
-        title: Retrieve hostname mapping for all SVMs
+        title: Retrieve the hostname mapping for all SVMs
         category: name-services
         filename: get-name-services-name-mappings.html
         subcategory: Manage name mappings for SVMs
@@ -852,7 +852,7 @@ paths:
         explorer: false
     post:
       x-doc:
-        title: Create NIS domain and server configuration for a data SVM
+        title: Create the NIS domain and server configuration for a data SVM
         category: name-services
         filename: post-name-services-nis.html
         subcategory: Manage NIS server configurations
@@ -860,21 +860,21 @@ paths:
   "/name-services/nis/{svm.uuid}":
     delete:
       x-doc:
-        title: Delete NIS domain configuration for an SVM
+        title: Delete the NIS domain configuration for an SVM
         category: name-services
         filename: delete-name-services-nis-.html
         subcategory: Manage NIS server configurations
         explorer: false
     get:
       x-doc:
-        title: Retrieve NIS domain and server configurations for an SVM
+        title: Retrieve the NIS domain and server configurations for an SVM
         category: name-services
         filename: get-name-services-nis-.html
         subcategory: Manage NIS server configurations
         explorer: false
     patch:
       x-doc:
-        title: Update NIS domain and server configuration for an SVM
+        title: Update the NIS domain and server configuration for an SVM
         category: name-services
         filename: patch-name-services-nis-.html
         subcategory: Manage NIS server configurations
@@ -891,7 +891,7 @@ paths:
         explorer: false
     post:
       x-doc:
-        title: Create local UNIX user configuration for an SVM
+        title: Create a local UNIX user configuration for an SVM
         category: name-services
         filename: post-name-services-unix-users.html
         subcategory: Manage UNIX user configurations
@@ -961,14 +961,14 @@ paths:
         title: Retrieve ports
         category: networking
         filename: get-network-ethernet-ports.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
     post:
       x-doc:
         title: Create a new VLAN or LAG
         category: networking
         filename: post-network-ethernet-ports.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
   "/network/ethernet/ports/{uuid}":
     delete:
@@ -976,21 +976,21 @@ paths:
         title: Delete a VLAN or LAG
         category: networking
         filename: delete-network-ethernet-ports-.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
     get:
       x-doc:
         title: Retrieve a physical port, VLAN, or LAG details
         category: networking
         filename: get-network-ethernet-ports-.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
     patch:
       x-doc:
         title: Update a port
         category: networking
         filename: patch-network-ethernet-ports-.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
   "/network/ethernet/ports/{uuid}/metrics":
     get:
@@ -998,7 +998,7 @@ paths:
         title: Retrieve historical port performance metrics
         category: networking
         filename: get-network-ethernet-ports-metrics.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
   "/network/ethernet/switch/ports":
     get:
@@ -1006,7 +1006,7 @@ paths:
         title: Retrieve Ethernet switch ports
         category: networking
         filename: get-network-ethernet-switch-ports.html
-        subcategory: Retrieve network ethernet switch ports
+        subcategory: Retrieve network Ethernet switch ports
         explorer: false
   "/network/ethernet/switch/ports/{switch}/{identity.name}/{identity.index}":
     get:
@@ -1014,7 +1014,7 @@ paths:
         title: Retrieve an Ethernet switch port
         category: networking
         filename: get-network-ethernet-switch-ports--.html
-        subcategory: Retrieve network ethernet switch ports
+        subcategory: Retrieve network Ethernet switch ports
         explorer: false
   "/network/ethernet/switches":
     get:
@@ -1022,7 +1022,7 @@ paths:
         title: Retrieve Ethernet switches attached to a chassis
         category: networking
         filename: get-network-ethernet-switches.html
-        subcategory: Manage ethernet switches
+        subcategory: Manage Ethernet switches
         explorer: false
     
   "/network/ethernet/switches/{name}":
@@ -1032,14 +1032,14 @@ paths:
         title: Retrieve Ethernet switch details
         category: networking
         filename: get-network-ethernet-switches-.html
-        subcategory: Manage ethernet switches
+        subcategory: Manage Ethernet switches
         explorer: false
     patch:
       x-doc:
         title: Update an Ethernet switch
         category: networking
         filename: patch-network-ethernet-switches-.html
-        subcategory: Manage ethernet switches
+        subcategory: Manage Ethernet switches
         explorer: false
 
   
@@ -1168,7 +1168,7 @@ paths:
   "/network/http-proxy":
     get:
       x-doc:
-        title: Retrieve http proxy configurations for all SVMs and cluster
+        title: Retrieve HTTP proxy configurations for all SVMs and cluster
           IPspaces
         category: networking
         filename: get-network-http-proxy.html
@@ -1176,22 +1176,22 @@ paths:
         explorer: false
     post:
       x-doc:
-        title: Create an http proxy configuration for an SVM or cluster IPspace
+        title: Create an HTTP proxy configuration for an SVM or cluster IPspace
         category: networking
         filename: post-network-http-proxy.html
         subcategory: Manage HTTP proxy configuration
         explorer: false
-  "/network/http-proxy/{uuid}":
+  "/network/HTTP-proxy/{uuid}":
     delete:
       x-doc:
-        title: Delete http proxy configuration for an SVM or cluster IPspace
+        title: Delete the HTTP proxy configuration for an SVM or cluster IPspace
         category: networking
         filename: delete-network-http-proxy-.html
         subcategory: Manage HTTP proxy configuration
         explorer: false
     get:
       x-doc:
-        title: Display http proxy server, port, and IPspace information for an SVM or cluster IPspace
+        title: Display HTTP proxy server, port, and IPspace information for an SVM or cluster IPspace
         category: networking
         filename: get-network-http-proxy-.html
         subcategory: Manage HTTP proxy configuration
@@ -1405,7 +1405,7 @@ paths:
         explorer: false
     post:
       x-doc:
-        title: Create audit configuration
+        title: Create an audit configuration
         category: NAS
         filename: post-protocols-audit.html
         subcategory: Manage NAS audit configurations 
@@ -1413,21 +1413,21 @@ paths:
   "/protocols/audit/{svm.uuid}":
     delete:
       x-doc:
-        title: Delete audit configuration
+        title: Delete an audit configuration
         category: NAS
         filename: delete-protocols-audit-.html
         subcategory: Manage NAS audit configurations 
         explorer: false
     get:
       x-doc:
-        title: Retrieve audit configuration for an SVM
+        title: Retrieve an audit configuration for an SVM
         category: NAS
         filename: get-protocols-audit-.html
         subcategory: Manage NAS audit configurations 
         explorer: false
     patch:
       x-doc:
-        title: Update audit configuration for an SVM
+        title: Update an audit configuration for an SVM
         category: NAS
         filename: patch-protocols-audit-.html
         subcategory: Manage NAS audit configurations 
@@ -1481,7 +1481,7 @@ paths:
         explorer: false
     post:
       x-doc:
-        title: Create local user configuration for an SVM
+        title: Create the local user configuration for an SVM
         category: NAS
         filename: post-protocols-cifs-local-users.html
         subcategory: Manage local users
@@ -1489,21 +1489,21 @@ paths:
   "/protocols/cifs/local-users/{svm.uuid}/{sid}":
     delete:
       x-doc:
-        title: Delete local user configuration for an SVM
+        title: Delete the local user configuration for an SVM
         category: NAS
         filename: delete-protocols-cifs-local-users-.html
         subcategory: Manage local users
         explorer: false
     get:
       x-doc:
-        title: Retrieve local user information for a user and SVM
+        title: Retrieve the local user information for a user and SVM
         category: NAS
         filename: get-protocols-cifs-local-users-.html
         subcategory: Manage local users
         explorer: false
     patch:
       x-doc:
-        title: Update local user information for a user and SVM
+        title: Update the local user information for a user and SVM
         category: NAS
         filename: patch-protocols-cifs-local-users-.html
         subcategory: Manage local users
@@ -1550,7 +1550,7 @@ paths:
     get:
       x-doc:
         title: Retrieve CIFS protocol historical performance metrics for an SVM
-          svm
+          
         category: NAS
         filename: get-protocols-cifs-services-metrics.html
         subcategory: Manage CIFS services
@@ -1567,14 +1567,14 @@ paths:
   "/protocols/cifs/sessions/{node.uuid}/{svm.uuid}/{identifier}/{connection_id}":
     delete:
       x-doc:
-        title: Delete SMB session information for an SVM node
+        title: Delete an SMB session information for an SVM node
         category: NAS
         filename: delete-protocols-cifs-sessions--.html
         subcategory: View CIFS active sessions
         explorer: false
     get:
       x-doc:
-        title: Retrieve SMB session information for an SMB connection in a SVM node
+        title: Retrieve an SMB session information for an SMB connection in a SVM node
         category: NAS
         filename: get-protocols-cifs-sessions--.html
         subcategory: View CIFS active sessions
@@ -1672,21 +1672,21 @@ paths:
   "/protocols/cifs/unix-symlink-mapping/{svm.uuid}/{unix_path}":
     delete:
       x-doc:
-        title: Delete UNIX symbolic link mapping for CIFS clients
+        title: Delete the UNIX symbolic link mapping for CIFS clients
         category: NAS
         filename: delete-protocols-cifs-unix-symlink-mapping-.html
         subcategory: Manage CIFS UNIX symlink mapping
         explorer: false
     get:
       x-doc:
-        title: Retrieve a UNIX symbolic link mapping for CIFS clients
+        title: Retrieve the UNIX symbolic link mapping for CIFS clients
         category: NAS
         filename: get-protocols-cifs-unix-symlink-mapping-.html
         subcategory: Manage CIFS UNIX symlink mapping
         explorer: false
     patch:
       x-doc:
-        title: Update UNIX symbolic link mapping for CIFS clients
+        title: Update the UNIX symbolic link mapping for CIFS clients
         category: NAS
         filename: patch-protocols-cifs-unix-symlink-mapping-.html
         subcategory: Manage CIFS UNIX symlink mapping
@@ -1767,14 +1767,14 @@ paths:
   "/protocols/fpolicy":
     get:
       x-doc:
-        title: Retrieve FPolicy configuration
+        title: Retrieve an FPolicy configuration
         category: NAS
         filename: get-protocols-fpolicy.html
         subcategory: Manage FPolicy configuration
         explorer: false
     post:
       x-doc:
-        title: Create FPolicy configuration
+        title: Create an FPolicy configuration
         category: NAS
         filename: post-protocols-fpolicy.html
         subcategory: Manage FPolicy configuration
@@ -1782,14 +1782,14 @@ paths:
   "/protocols/fpolicy/{svm.uuid}":
     delete:
       x-doc:
-        title: Delete FPolicy configuration for an SVM
+        title: Delete the FPolicy configuration for an SVM
         category: NAS
         filename: delete-protocols-fpolicy-.html
         subcategory: Manage FPolicy configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve FPolicy configuration for an SVM
+        title: Retrieve the FPolicy configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-.html
         subcategory: Manage FPolicy configuration
@@ -1799,14 +1799,14 @@ paths:
   "/protocols/fpolicy/{svm.uuid}/engines":
     get:
       x-doc:
-        title: Retrieve FPolicy engine configuration for all engines of an SVM 
+        title: Retrieve the FPolicy engine configuration for all engines of an SVM 
         category: NAS
         filename: get-protocols-fpolicy-engines.html
         subcategory: Manage FPolicy engine configuration
         explorer: false
     post:
       x-doc:
-        title: Create FPolicy engine configuration for an SVM
+        title: Create an FPolicy engine configuration for an SVM
         category: NAS
         filename: post-protocols-fpolicy-engines.html
         subcategory: Manage FPolicy engine configuration
@@ -1814,21 +1814,21 @@ paths:
   "/protocols/fpolicy/{svm.uuid}/engines/{name}":
     delete:
       x-doc:
-        title: Delete FPolicy external engine configuration
+        title: Delete an FPolicy external engine configuration
         category: NAS
         filename: delete-protocols-fpolicy-engines-.html
         subcategory: Manage FPolicy engine configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve particular FPolicy engine configuration for an SVM
+        title: Retrieve a particular FPolicy engine configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-engines-.html
         subcategory: Manage FPolicy engine configuration
         explorer: false
     patch:
       x-doc:
-        title: Update specific FPolicy engine configuration for an SVM
+        title: Update a specific FPolicy engine configuration for an SVM
         category: NAS
         filename: patch-protocols-fpolicy-engines-.html
         subcategory: Manage FPolicy engine configuration
@@ -1836,14 +1836,14 @@ paths:
   "/protocols/fpolicy/{svm.uuid}/events":
     get:
       x-doc:
-        title: Retrieve FPolicy event configuration for all events for an SVM
+        title: Retrieve the FPolicy event configuration for all events for an SVM
         category: NAS
         filename: get-protocols-fpolicy-events.html
         subcategory: Manage FPolicy event configuration
         explorer: false
     post:
       x-doc:
-        title: Create FPolicy event configuration for an SVM
+        title: Create the FPolicy event configuration for an SVM
         category: NAS
         filename: post-protocols-fpolicy-events.html
         subcategory: Manage FPolicy event configuration
@@ -1851,21 +1851,21 @@ paths:
   "/protocols/fpolicy/{svm.uuid}/events/{name}":
     delete:
       x-doc:
-        title: Delete specific FPolicy event configuration for an SVM
+        title: Delete a specific FPolicy event configuration for an SVM
         category: NAS
         filename: delete-protocols-fpolicy-events-.html
         subcategory: Manage FPolicy event configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve specific FPolicy event configuration for an SVM
+        title: Retrieve a specific FPolicy event configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-events-.html
         subcategory: Manage FPolicy event configuration
         explorer: false
     patch:
       x-doc:
-        title: Update specific FPolicy event configuration for an SVM
+        title: Update a specific FPolicy event configuration for an SVM
         category: NAS
         filename: patch-protocols-fpolicy-events-.html
         subcategory: Manage FPolicy event configuration
@@ -1873,14 +1873,14 @@ paths:
   "/protocols/fpolicy/{svm.uuid}/policies":
     get:
       x-doc:
-        title: Retrieve FPolicy configuration for an SVM
+        title: Retrieve the FPolicy configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-policies.html
         subcategory: Manage SVM FPolicy configuration
         explorer: false
     post:
       x-doc:
-        title: Create FPolicy configuration for an SVM
+        title: Create the FPolicy configuration for an SVM
         category: NAS
         filename: post-protocols-fpolicy-policies.html
         subcategory: Manage SVM FPolicy configuration
@@ -1911,14 +1911,14 @@ paths:
   "/protocols/ndmp":
     get:
       x-doc:
-        title: Retrieve current NDMP mode
+        title: Retrieve the current NDMP mode
         category: ndmp
         filename: get-protocols-ndmp.html
         subcategory: Manage NDMP mode
         explorer: false
     patch:
       x-doc:
-        title: Update NDMP mode
+        title: Update the NDMP mode
         category: ndmp
         filename: patch-protocols-ndmp.html
         subcategory: Manage NDMP mode
@@ -1934,14 +1934,14 @@ paths:
   "/protocols/ndmp/nodes/{node.uuid}":
     get:
       x-doc:
-        title: Retrieve NDMP node configuration for a node
+        title: Retrieve the NDMP node configuration for a node
         category: ndmp
         filename: get-protocols-ndmp-nodes-.html
         subcategory: Manage NDMP node configurations
         explorer: false
     patch:
       x-doc:
-        title: Update NDMP node configuration for a node
+        title: Update the NDMP node configuration for a node
         category: ndmp
         filename: patch-protocols-ndmp-nodes-.html
         subcategory: Manage NDMP node configurations
@@ -1972,7 +1972,7 @@ paths:
   "/protocols/ndmp/svms":
     get:
       x-doc:
-        title: Retrieve NDMP configurations for all SVMs
+        title: Retrieve the NDMP configurations for all SVMs
         category: ndmp
         filename: get-protocols-ndmp-svms.html
         subcategory: Manage NDMP configuration of SVM
@@ -1980,14 +1980,14 @@ paths:
   "/protocols/ndmp/svms/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieve NDMP configuration for an SVM
+        title: Retrieve the NDMP configuration for an SVM
         category: ndmp
         filename: get-protocols-ndmp-svms-.html
         subcategory: Manage NDMP configuration of SVM
         explorer: false
     patch:
       x-doc:
-        title: Update NDMP configuration for an SVM
+        title: Update the NDMP configuration for an SVM
         category: ndmp
         filename: patch-protocols-ndmp-svms-.html
         subcategory: Manage NDMP configuration of SVM
@@ -1997,7 +1997,7 @@ paths:
   "/protocols/nfs/connected-clients":
     get:
       x-doc:
-        title: Retrieve NFS configuration for an SVM
+        title: Retrieve the NFS configuration for an SVM
         category: NAS
         filename: get-protocols-nfs-connected-clients.html
         subcategory: View NFS connected clients 
@@ -2162,7 +2162,7 @@ paths:
   "/protocols/nfs/services":
     get:
       x-doc:
-        title: Retrieve NFS configuration for SVMs
+        title: Retrieve the NFS configuration for SVMs
         category: NAS
         filename: get-protocols-nfs-services.html
         subcategory: Manage NFS services
@@ -2177,21 +2177,21 @@ paths:
   "/protocols/nfs/services/{svm.uuid}":
     delete:
       x-doc:
-        title: Delete NFS configuration for an SVM
+        title: Delete the NFS configuration for an SVM
         category: NAS
         filename: delete-protocols-nfs-services-.html
         subcategory: Manage NFS services
         explorer: false
     get:
       x-doc:
-        title: Retrieve NFS configuration for an SVM
+        title: Retrieve the NFS configuration for an SVM
         category: NAS
         filename: get-protocols-nfs-services-.html
         subcategory: Manage NFS services
         explorer: false
     patch:
       x-doc:
-        title: Update NFS configuration for an SVM
+        title: Update the NFS configuration for an SVM
         category: NAS
         filename: patch-protocols-nfs-services-.html
         subcategory: Manage NFS services
@@ -2388,7 +2388,7 @@ paths:
         explorer: false
     post:
       x-doc:
-        title: Create S3 bucket configuration for an SVM
+        title: Create the S3 bucket configuration for an SVM
         category: Object-store
         filename: post-protocols-s3-buckets.html
         subcategory: Manage S3 buckets
@@ -2397,7 +2397,7 @@ paths:
   "/protocols/s3/buckets/{svm.uuid}/{uuid}":
     delete:
       x-doc:
-        title: Delete S3 bucket configuration for an SVM
+        title: Delete the S3 bucket configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-buckets-.html
         subcategory: Manage S3 buckets
@@ -2405,7 +2405,7 @@ paths:
         
     get:
       x-doc:
-        title: Retrieve S3 bucket configuration for an SVM
+        title: Retrieve the S3 bucket configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-buckets-.html
         subcategory: Manage S3 buckets
@@ -2414,7 +2414,7 @@ paths:
         
     patch:
       x-doc:
-        title: Update S3 bucket configuration for an SVM
+        title: Update the S3 bucket configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-buckets-.html
         subcategory: Manage S3 buckets
@@ -2424,7 +2424,7 @@ paths:
   "/protocols/s3/services":
     get:
       x-doc:
-        title: Retrieve S3 server configuration for all SVMs
+        title: Retrieve the S3 server configuration for all SVMs
         category: Object-store
         filename: get-protocols-s3-services.html
         subcategory: Manage protocols S3 services
@@ -2440,21 +2440,21 @@ paths:
   "/protocols/s3/services/{svm.uuid}":
     delete:
       x-doc:
-        title: Delete S3 server configuration for an SVM
+        title: Delete the S3 server configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-.html
         subcategory: Manage protocols S3 services
         explorer: false
     get:
       x-doc:
-        title: Retrieve S3 server configuration for an SVM
+        title: Retrieve the S3 server configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-.html
         subcategory: Manage protocols S3 services
         explorer: false
     patch:
       x-doc:
-        title: Update S3 server configuration for an SVM
+        title: Update the S3 server configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-services-.html
         subcategory: Manage protocols S3 services
@@ -2477,7 +2477,7 @@ paths:
   "/protocols/s3/services/{svm.uuid}/buckets/{uuid}":
     delete:
       x-doc:
-        title: Delete S3 bucket configuration for an SVM
+        title: Delete the S3 bucket configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-buckets-.html
         subcategory: Manage S3 service bucket configuration
@@ -2499,14 +2499,14 @@ paths:
   "/protocols/s3/services/{svm.uuid}/groups":
     get:
       x-doc:
-        title: Retrieve S3 group configuration
+        title: Retrieve an S3 group configuration
         category: Object-store
         filename: get-protocols-s3-services-groups.html
         subcategory: Manage S3 service group configuration
         explorer: false
     post:
       x-doc:
-        title: Create S3 group configuration
+        title: Create an S3 group configuration
         category: Object-store
         filename: post-protocols-s3-services-groups.html
         subcategory: Manage S3 service group configuration
@@ -2514,14 +2514,14 @@ paths:
   "/protocols/s3/services/{svm.uuid}/groups/{id}":
     delete:
       x-doc:
-        title: Delete S3 group configuration for an SVM
+        title: Delete the S3 group configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-groups-.html
         subcategory: Manage S3 service group configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve S3 group configuration for an SVM
+        title: Retrieve the S3 group configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-groups-.html
         subcategory: Manage S3 service group configuration
@@ -2581,7 +2581,7 @@ paths:
   "/protocols/s3/services/{svm.uuid}/users":
     get:
       x-doc:
-        title: Retrieve SVM configuration for an S3 user 
+        title: Retrieve the SVM configuration for an S3 user 
         category: Object-store
         filename: get-protocols-s3-services-users.html
         subcategory: Manage S3 service users
@@ -2603,7 +2603,7 @@ paths:
         explorer: false
     get:
       x-doc:
-        title: Retrieve S3 user configuration for an SVM
+        title: Retrieve the S3 user configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-users-.html
         subcategory: Manage S3 service users
@@ -2878,7 +2878,7 @@ paths:
   "/protocols/vscan/server-status":
     get:
       x-doc:
-        title: Retrieve Vscan server status
+        title: Retrieve the Vscan server status
         category: NAS
         filename: get-protocols-vscan-server-status.html
         subcategory: Manage Vscan configuration
@@ -2912,14 +2912,14 @@ paths:
         title: Retrieve a Vscan On-Access policy
         category: NAS
         filename: get-protocols-vscan-on-access-policies.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
     post:
       x-doc:
         title: Create a Vscan On-Access policy
         category: NAS
         filename: post-protocols-vscan-on-access-policies.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/on-access-policies/{name}":
     delete:
@@ -2927,21 +2927,21 @@ paths:
         title: Delete an antivirus On-Access policy configuration
         category: NAS
         filename: delete-protocols-vscan-on-access-policies-.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
     get:
       x-doc:
         title: Retrieve the Vscan On-Access policy configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-on-access-policies-.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
     patch:
       x-doc:
-        title: Manage Vscan On-Access policy configuration for an SVM
+        title: Update the Vscan On-Access policy configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-access-policies-.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/on-demand-policies":
     get:
@@ -2949,41 +2949,41 @@ paths:
         title: Retrieve a Vscan On-Demand policy
         category: NAS
         filename: get-protocols-vscan-on-demand-policies.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
     post:
       x-doc:
         title: Create a Vscan On-Demand policy
         category: NAS
         filename: post-protocols-vscan-on-demand-policies.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/on-demand-policies/{name}":
     delete:
       x-doc:
-        title: Delete Vscan On-Demand configuration
+        title: Delete a Vscan On-Demand configuration
         category: NAS
         filename: delete-protocols-vscan-on-demand-policies-.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
     get:
       x-doc:
-        title: Retrieve Vscan On-Demand configuration for an SVM
+        title: Retrieve the Vscan On-Demand configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-on-demand-policies-.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
     patch:
       x-doc:
-        title: Update Vscan On-Demand policy configuration for an SVM
+        title: Update the Vscan On-Demand policy configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-demand-policies-.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/scanner-pools":
     get:
       x-doc:
-        title: Retrieve Vscan scanner-pool configuration for an SVM
+        title: Retrieve the Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-scanner-pools.html
         subcategory: Manage Vscan scanner-pool configuration
@@ -2998,21 +2998,21 @@ paths:
   "/protocols/vscan/{svm.uuid}/scanner-pools/{name}":
     delete:
       x-doc:
-        title: Delete Vscan scanner-pool configuration
+        title: Delete the Vscan scanner-pool configuration
         category: NAS
         filename: delete-protocols-vscan-scanner-pools-.html
         subcategory: Manage Vscan scanner-pool configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve Vscan scanner-pool configuration for an SVM
+        title: Retrieve the Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-scanner-pools-.html
         subcategory: Manage Vscan scanner-pool configuration
         explorer: false
     patch:
       x-doc:
-        title: Update Vscan scanner-pool configuration for an SVM
+        title: Update the Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-scanner-pools-.html
         subcategory: Manage Vscan scanner-pool configuration
@@ -3089,7 +3089,7 @@ paths:
   "/security/audit/destinations":
     get:
       x-doc:
-        title: Define a remote syslog or splunk server to recieve audit information
+        title: Define a remote syslog or splunk server to receive audit information
         category: security
         filename: get-security-audit-destinations.html
         subcategory: Forward audit logs to syslog/splunk servers
@@ -3126,7 +3126,7 @@ paths:
   "/security/audit/messages":
     get:
       x-doc:
-        title: Retrieve administrative audit log viewer
+        title: Retrieve the administrative audit log viewer
         category: security
         filename: get-security-audit-messages.html
         subcategory: View administrative audit logs
@@ -3155,7 +3155,7 @@ paths:
         explorer: false
     post:
       x-doc:
-        title: Confgure a data SVM as a proxy 
+        title: Configure a data SVM as a proxy 
         category: security
         filename: post-security-authentication-cluster-ad-proxy.html
         subcategory: Manage data SVM account information
@@ -3163,28 +3163,28 @@ paths:
   "/security/authentication/cluster/ldap":
     delete:
       x-doc:
-        title: Delete LDAP configuration for the cluster
+        title: Delete the LDAP configuration for the cluster
         category: security
         filename: delete-security-authentication-cluster-ldap.html
         subcategory: Manage LDAP server configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve LDAP configuration for the cluster
+        title: Retrieve the LDAP configuration for the cluster
         category: security
         filename: get-security-authentication-cluster-ldap.html
         subcategory: Manage LDAP server configuration
         explorer: false
     patch:
       x-doc:
-        title: Update LDAP configuration for the cluster
+        title: Update the LDAP configuration for the cluster
         category: security
         filename: patch-security-authentication-cluster-ldap.html
         subcategory: Manage LDAP server configuration
         explorer: false
     post:
       x-doc:
-        title: Create LDAP configuration for the cluster
+        title: Create the LDAP configuration for the cluster
         category: security
         filename: post-security-authentication-cluster-ldap.html
         subcategory: Manage LDAP server configuration
@@ -3192,28 +3192,28 @@ paths:
   "/security/authentication/cluster/nis":
     delete:
       x-doc:
-        title: Delete NIS configuration for the cluster
+        title: Delete the NIS configuration for the cluster
         category: security
         filename: delete-security-authentication-cluster-nis.html
         subcategory: Manage NIS configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve NIS configuration for the cluster
+        title: Retrieve the NIS configuration for the cluster
         category: security
         filename: get-security-authentication-cluster-nis.html
         subcategory: Manage NIS configuration
         explorer: false
     patch:
       x-doc:
-        title: Update NIS configuration for the cluster
+        title: Update the NIS configuration for the cluster
         category: security
         filename: patch-security-authentication-cluster-nis.html
         subcategory: Manage NIS configuration
         explorer: false
     post:
       x-doc:
-        title: Create NIS configuration for the cluster
+        title: Create the NIS configuration for the cluster
         category: security
         filename: post-security-authentication-cluster-nis.html
         subcategory: Manage NIS configuration
@@ -3235,7 +3235,7 @@ paths:
         explorer: false
     patch:
       x-doc:
-        title: Update SAML service provider configuration
+        title: Update a SAML service provider configuration
         category: security
         filename: patch-security-authentication-cluster-saml-sp.html
         subcategory: Manage SAML service
@@ -3250,7 +3250,7 @@ paths:
   "/security/authentication/password":
     post:
       x-doc:
-        title: Update user account password
+        title: Update the user account password
         category: security
         filename: post-security-authentication-password.html
         subcategory: Update user account password
@@ -3328,7 +3328,7 @@ paths:
         explorer: false
     get:
       x-doc:
-        title: Retrieve AKV configuration for an SVM specified by the UUID
+        title: Retrieve the AKV configuration for an SVM specified by the UUID
         category: security
         filename: get-security-azure-key-vaults-.html
         subcategory: Manage Azure Key Vaults 
@@ -3383,14 +3383,14 @@ paths:
   "/security/ipsec":
     get:
       x-doc:
-        title: Retrieve IPsec configuration 
+        title: Retrieve an IPsec configuration 
         category: security
         filename: get-security-ipsec.html
         subcategory: View and update IPsec configuration
         explorer: false
     patch:
       x-doc:
-        title: Update IPsec configuration
+        title: Update an IPsec configuration
         category: security
         filename: patch-security-ipsec.html
         subcategory: View and update IPsec configuration
@@ -3549,14 +3549,14 @@ paths:
   "/security/login/messages/{uuid}":
     get:
       x-doc:
-        title: Retrieve login messages configuration by UUID
+        title: Retrieve a login message configuration by UUID
         category: security
         filename: get-security-login-messages-.html
         subcategory: View and update login message configuration
         explorer: false
     patch:
       x-doc:
-        title: Update login messages configuration
+        title: Update the login message configuration
         category: security
         filename: patch-security-login-messages-.html
         subcategory: View and update login message configuration
@@ -3635,7 +3635,7 @@ paths:
   "/security/ssh":
     get:
       x-doc:
-        title: Retrieve cluster SSH server ciphers, mac algorithms, key exchange algorithms, and connection limits
+        title: Retrieve cluster SSH server ciphers, MAC algorithms, key exchange algorithms, and connection limits
         category: security
         filename: get-security-ssh.html
         subcategory: Manage SSH server
@@ -3937,7 +3937,7 @@ paths:
   "/storage/flexcache/origins":
     get:
       x-doc:
-        title: Retrieve the origin of a FlexCache in the cluster
+        title: Retrieve the origin of a FlexCache volume in the cluster
         category: storage
         filename: get-storage-flexcache-origins.html
         subcategory: Manage storage FlexCache origin volumes
@@ -3945,7 +3945,7 @@ paths:
   "/storage/flexcache/origins/{uuid}":
     get:
       x-doc:
-        title: Retrieve attributes of the origin of a FlexCache in the cluster
+        title: Retrieve attributes of the origin of a FlexCache volume in the cluster
         category: storage
         filename: get-storage-flexcache-origins-.html
         subcategory: Manage storage FlexCache origin volumes
@@ -3955,7 +3955,7 @@ paths:
   "/storage/monitored-files":
     get:
       x-doc:
-        title: Retrieve all monitored file
+        title: Retrieve all monitored files
         category: storage
         filename: get-storage-monitored-files.html
         subcategory: View and create monitored files
@@ -4242,7 +4242,7 @@ paths:
   "/storage/snaplock/audit-logs":
     get:
       x-doc:
-        title: Retrieve SVM configured with audit log volumes
+        title: Retrieve SVMs configured with audit log volumes
         category: snaplock
         filename: get-storage-snaplock-audit-logs.html
         subcategory: Manage SnapLock audit logs
@@ -4480,14 +4480,14 @@ paths:
         title: Retrieve Snapshot copy policies
         category: storage
         filename: get-storage-snapshot-policies.html
-        subcategory: Create and retrieve Snapshot copy policies
+        subcategory: Manage Snapshot copy policies
         explorer: false
     post:
       x-doc:
         title: Create a Snapshot copy policy
         category: storage
         filename: post-storage-snapshot-policies.html
-        subcategory: Create and retrieve Snapshot copy policies
+        subcategory: Manage Snapshot copy policies
         explorer: false
   "/storage/snapshot-policies/{snapshot_policy.uuid}/schedules":
     get:
@@ -4532,21 +4532,21 @@ paths:
         title: Delete a Snapshot copy policy
         category: storage
         filename: delete-storage-snapshot-policies-.html
-        subcategory: Manage Snapshot copy policies and schedules
+        subcategory: Manage Snapshot copy policies 
         explorer: false
     get:
       x-doc:
         title: Retrieve Snapshot copy policy details
         category: storage
         filename: get-storage-snapshot-policies-.html
-        subcategory: Manage Snapshot copy policies and schedules
+        subcategory: Manage Snapshot copy policies 
         explorer: false
     patch:
       x-doc:
         title: Update a Snapshot copy policy
         category: storage
         filename: patch-storage-snapshot-policies-.html
-        subcategory: Manage Snapshot copy policies and schedules
+        subcategory: Manage Snapshot copy policies 
         explorer: false
 
   "/storage/volume-efficiency-policies":
@@ -4685,14 +4685,14 @@ paths:
         title: Retrieve the AutoSupport configuration 
         category: support
         filename: get-support-autosupport.html
-        subcategory: AutoSupport configuration
+        subcategory: Manage AutoSupport configuration
         explorer: false
     patch:
       x-doc:
-        title: Update AutoSupport configuration for an entire cluster
+        title: Update the AutoSupport configuration for an entire cluster
         category: support
         filename: patch-support-autosupport.html
-        subcategory: AutoSupport configuration
+        subcategory: Manage AutoSupport configuration
         explorer: false
   "/support/autosupport/messages":
     get:
@@ -4758,14 +4758,14 @@ paths:
   "/support/ems":
     get:
       x-doc:
-        title: Retrieve EMS configuration
+        title: Retrieve an EMS configuration
         category: support
         filename: get-support-ems.html
         subcategory: Manage EMS configuration 
         explorer: false
     patch:
       x-doc:
-        title: Update EMS configuration
+        title: Update an EMS configuration
         category: support
         filename: patch-support-ems.html
         subcategory: Manage EMS configuration 
@@ -4896,19 +4896,19 @@ paths:
         title: Retrieve event catalog definitions
         category: support
         filename: get-support-ems-messages.html
-        subcategory: EMS event catalog
+        subcategory: Manage EMS event catalog
         explorer: false
   "/support/snmp":
     get:
       x-doc:
-        title: Retrieve cluster-wide SNMP configuration
+        title: Retrieve the cluster-wide SNMP configuration
         category: support
         filename: get-support-snmp.html
         subcategory: Manage cluster-wide SNMP configuration
         explorer: false
     patch:
       x-doc:
-        title: Update cluster-wide SNMP configuration
+        title: Update the cluster-wide SNMP configuration
         category: support
         filename: patch-support-snmp.html
         subcategory: Manage cluster-wide SNMP configuration
