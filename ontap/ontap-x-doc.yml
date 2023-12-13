@@ -1918,7 +1918,7 @@ paths:
         explorer: false
     patch:
       x-doc:
-        title: Update an NDMP mode
+        title: Update the NDMP mode
         category: ndmp
         filename: patch-protocols-ndmp.html
         subcategory: Manage NDMP mode
